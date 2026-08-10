@@ -1,0 +1,21 @@
+# data (MIMIC requires credentialed access, never commit it)
+*.csv
+*.npz
+*.dat
+*.hea
+data/
+features.npz
+
+# credentials
+*cookies.txt
+.env
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# os
+.DS_Store
