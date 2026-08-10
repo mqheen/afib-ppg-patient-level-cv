@@ -1,6 +1,6 @@
 # AFib detection in ICU data: what happens when you split by segment instead of by patient
 
-I built this after finishing a course project where I'd claimed patient-level
+I built this after finishing a project where I'd claimed patient-level
 data splitting was the right choice, and then realized I had never actually
 checked what the wrong choice would have produced. This is that check.
 
@@ -44,10 +44,10 @@ second-guessing whether my patient-level splitter was actually working.
 
 ## Background
 
-This was my half of a two-person project for AI and Healthcare at Barnard,
-evaluating AFib detection on MIMIC-III-Ext-PPG, which was released in February
-2026 and is much larger than anything previously available for this problem
-(6,131 patients, versus 37 in the paper we were building on).
+This was my half of a two-person project for AI and Healthcare at Barnard College, 
+Columbia University, evaluating AFib detection on MIMIC-III-Ext-PPG,
+which was released in February 2026 and is much larger than anything previously 
+available for this problem (6,131 patients, versus 37 in the paper we were building on).
 
 Bulut et al. (2025) reported 95.17% accuracy on 37 patients using a segment-level
 split. Kwon et al. (2019) ran both splitting strategies on the same data and
