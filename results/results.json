@@ -1,0 +1,81 @@
+{
+  "n_segments": 1000000,
+  "n_patients": 6017,
+  "af_prevalence": 0.094,
+  "subsample_seed": 42,
+  "source_dataset": "MIMIC-III-Ext-PPG v1.1.0, metadata.csv (6,399,754 segments, 6,189 patients)",
+  "results": [
+    {
+      "label": "V1 aggregate | patient",
+      "auroc": 0.8369385711419121,
+      "average_precision": 0.41957834304291636,
+      "f1": 0.4164219002673179,
+      "precision": 0.46287600880410856,
+      "recall": 0.3784416051826525,
+      "specificity": 0.9633069366479551,
+      "threshold": 0.77,
+      "n_test_segments": 216191,
+      "patients_in_both_train_and_test": 0
+    },
+    {
+      "label": "V1 aggregate | segment",
+      "auroc": 0.970261063872706,
+      "average_precision": 0.8217930005435464,
+      "f1": 0.7523786550883118,
+      "precision": 0.7558020569705455,
+      "recall": 0.7489861259338314,
+      "specificity": 0.974980690720512,
+      "threshold": 0.79,
+      "n_test_segments": 200000,
+      "patients_in_both_train_and_test": 5584
+    },
+    {
+      "label": "V2 + irregularity | patient",
+      "auroc": 0.8488950720647435,
+      "average_precision": 0.48678426868464275,
+      "f1": 0.47687537111565614,
+      "precision": 0.5297954995235652,
+      "recall": 0.4335672725091476,
+      "specificity": 0.9678478348035284,
+      "threshold": 0.77,
+      "n_test_segments": 216191,
+      "patients_in_both_train_and_test": 0
+    },
+    {
+      "label": "V2 + irregularity | segment",
+      "auroc": 0.9718530639195735,
+      "average_precision": 0.8300927124297248,
+      "f1": 0.7611831484663855,
+      "precision": 0.743262483474016,
+      "recall": 0.7799893276414087,
+      "specificity": 0.97214498510427,
+      "threshold": 0.77,
+      "n_test_segments": 200000,
+      "patients_in_both_train_and_test": 5584
+    },
+    {
+      "label": "demographics only | patient",
+      "auroc": 0.6435158121919575,
+      "average_precision": 0.11089337215532016,
+      "f1": 0.0906636265450618,
+      "precision": 0.09069083488386051,
+      "recall": 0.09063643452702297,
+      "specificity": 0.9240677626303128,
+      "threshold": 0.73,
+      "n_test_segments": 216191,
+      "patients_in_both_train_and_test": 0
+    },
+    {
+      "label": "demographics only | segment",
+      "auroc": 0.9563858098257061,
+      "average_precision": 0.753067965746597,
+      "f1": 0.6783842121492445,
+      "precision": 0.6542426645519429,
+      "recall": 0.7043756670224119,
+      "specificity": 0.9615138475118614,
+      "threshold": 0.73,
+      "n_test_segments": 200000,
+      "patients_in_both_train_and_test": 5584
+    }
+  ]
+}
